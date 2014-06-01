@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.mangal.util.DynamicHeightImageView
+            android:id="@+id/poster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.mangal.util.DynamicHeightImageView
+            android:id="@+id/onPoster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/musicName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp" />
+
+    <TextView
+        android:id="@+id/musicAL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/card_play_count" />
+
+            <TextView
+                android:id="@+id/playCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/card_down_count" />
+
+            <TextView
+                android:id="@+id/downloadCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_margin="2dp"
+                android:src="@drawable/card_fav_count" />
+
+            <TextView
+                android:id="@+id/likedCounr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:text="0" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

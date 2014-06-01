@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <SeekBar
+        android:id="@+id/PCMusicSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/control_bar_height"
+        android:background="@drawable/bg_play_control" >
+
+        <ImageView
+            android:id="@+id/PCPoster"
+            android:layout_width="@dimen/control_bar_image_width"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pic_default" />
+
+        <LinearLayout
+            android:layout_width="@dimen/control_bar_text_width"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/PCMusicName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:text=""
+                android:textColor="@android:color/holo_blue_bright" />
+
+            <TextView
+                android:id="@+id/PCAR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:text=""
+                android:textColor="@android:color/holo_blue_bright" />
+
+            <TextView
+                android:id="@+id/PCSW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:text=""
+                android:textColor="@android:color/holo_blue_bright" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/PCCurrentTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="@string/current_time"
+                    android:textColor="@android:color/holo_blue_bright" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="-"
+                    android:textColor="@android:color/holo_blue_bright" />
+
+                <TextView
+                    android:id="@+id/PCEndTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="@string/end_time"
+                    android:textColor="@android:color/holo_blue_bright" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/PCLikeButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="center"
+                    android:src="@drawable/play_control_like_list" />
+
+                <ImageButton
+                    android:id="@+id/PCHandButton"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="11dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/play_control_hand_list" />
+
+                <ImageButton
+                    android:id="@+id/PCRepeatModeButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/play_control_repeatmode_list" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <ImageButton
+                    android:id="@+id/PCPrevButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/play_control_prev_button" />
+
+                <ImageButton
+                    android:id="@+id/PCPauseButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/play_control_pause_button"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/PCPlayButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/play_control_play_nor" />
+
+                <ImageButton
+                    android:id="@+id/PCNextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/play_control_next_button" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

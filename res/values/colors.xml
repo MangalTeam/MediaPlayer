@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#900</color>
+    <color name="green">#090</color>
+    <color name="blue">#009</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    
+    <color name="adapter_orange">#ffffdc7e</color>
+    <color name="adapter_grey">#ffd3d3d3</color>
+    <color name="adapter_green">#ff8dd304</color>
+    <color name="adapter_blue">#ff82e0ff</color>
+    <color name="adapter_yellow">#fffffbae</color>
+    <color name="adapter_red">#fff10800</color>
+    <color name="adapter_list_item_pressed">#1A000000</color>
+    
+</resources>
