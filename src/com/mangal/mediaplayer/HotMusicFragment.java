@@ -36,7 +36,7 @@ public class HotMusicFragment extends Fragment implements
 		super.onCreate(savedInstanceState);
 		setRetainInstance(true);
 	}
-
+   
 	@Override
 	public View onCreateView(final LayoutInflater inflater,
 			final ViewGroup container, final Bundle savedInstanceState) {
